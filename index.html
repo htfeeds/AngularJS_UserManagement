@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS | User Management</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body ng-controller="MainController as main">
+
+    <div class="container-fluid">
+        <!-- Header -->
+        <header ng-include="'views/shared/header.html'"></header>
+
+        <!-- Main view  -->
+        <div class="row" ui-view></div>
+
+        <!-- Footer -->
+        <footer ng-include="'views/shared/footer.html'"></footer>
+
+    </div>
+
+    <script src="js/jquery-2.2.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular/angular.min.js"></script>
+    <script src="js/ui-router/angular-ui-router.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/user-list.js"></script>
+
+</body>
+</html>
